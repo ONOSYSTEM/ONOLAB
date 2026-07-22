@@ -1,0 +1,84 @@
+body {
+
+    margin:0;
+
+    background:#111;
+
+    color:white;
+
+    font-family:
+    Helvetica, Arial, sans-serif;
+
+}
+
+
+header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:40px 60px;
+
+}
+
+
+h1 {
+
+    font-size:32px;
+
+    letter-spacing:8px;
+
+}
+
+
+
+nav a {
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:40px;
+
+    opacity:0.7;
+
+}
+
+
+
+.hero {
+
+    height:70vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+.hero h2 {
+
+    font-size:60px;
+
+    letter-spacing:5px;
+
+}
+
+
+
+.hero p {
+
+    font-size:20px;
+
+    opacity:0.6;
+
+}
