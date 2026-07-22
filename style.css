@@ -1,18 +1,30 @@
-body {
+*{
+    box-sizing:border-box;
+}
+
+
+
+body{
 
     margin:0;
 
     background:#111;
 
-    color:white;
+    color:#eee;
 
     font-family:
-    Helvetica, Arial, sans-serif;
+    Arial,
+    sans-serif;
 
 }
 
 
-header {
+
+header{
+
+    height:80px;
+
+    padding:30px 50px;
 
     display:flex;
 
@@ -20,54 +32,13 @@ header {
 
     align-items:center;
 
-    padding:40px 60px;
-
-}
-
-
-h1 {
-
-    font-size:32px;
-
-    letter-spacing:8px;
-
 }
 
 
 
-nav a {
+.logo{
 
-    color:white;
-
-    text-decoration:none;
-
-    margin-left:40px;
-
-    opacity:0.7;
-
-}
-
-
-
-.hero {
-
-    height:70vh;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-
-
-.hero h2 {
-
-    font-size:60px;
+    font-size:24px;
 
     letter-spacing:5px;
 
@@ -75,10 +46,187 @@ nav a {
 
 
 
-.hero p {
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:40px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.hero{
+
+    min-height:90vh;
+
+    padding:60px 50px;
+
+
+    display:flex;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+
+
+.hero-text{
+
+    flex:1;
+
+}
+
+
+
+.hero-text h1{
+
+
+    font-size:80px;
+
+    line-height:0.9;
+
+    letter-spacing:8px;
+
+}
+
+
+
+.hero-text p{
+
+    margin-top:40px;
 
     font-size:20px;
 
-    opacity:0.6;
+}
+
+
+
+
+
+.hero-image{
+
+
+    flex:1;
+
+
+    height:600px;
+
+
+    background:#c94c4c;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    font-size:40px;
+
+
+    image-rendering:pixelated;
+
+}
+
+
+
+
+
+.projects{
+
+
+    padding:80px 50px;
+
+
+}
+
+
+
+.projects h2{
+
+    font-size:50px;
+
+}
+
+
+
+
+
+.project-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+
+    gap:30px;
+
+
+}
+
+
+
+.image-box{
+
+
+    height:300px;
+
+    background:#355caa;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    font-size:30px;
+
+}
+
+
+
+.card h3{
+
+    font-size:24px;
+
+}
+
+
+
+
+
+.about{
+
+
+    padding:100px 50px;
+
+
+    background:#222;
+
+
+}
+
+
+.about p{
+
+    max-width:500px;
+
+    font-size:20px;
+
+    line-height:1.8;
 
 }
