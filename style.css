@@ -254,3 +254,247 @@ nav a{
     line-height:1.8;
 
 }
+/* =====================
+   Photography
+===================== */
+
+
+.photography{
+
+    padding:120px 50px;
+
+}
+
+
+
+.photography h2{
+
+    font-size:50px;
+
+    letter-spacing:6px;
+
+    margin:0 0 20px 0;
+
+}
+
+
+
+.photography .subtitle{
+
+    color:#888;
+
+    font-size:16px;
+
+    letter-spacing:3px;
+
+    margin-bottom:60px;
+
+}
+
+
+
+/* 瀑布流图片墙 */
+
+.photo-grid{
+
+    columns:4;
+
+    column-gap:20px;
+
+}
+
+
+
+/* 图片 */
+
+.photo-grid img{
+
+    width:100%;
+
+    display:block;
+
+    margin-bottom:20px;
+
+    break-inside:avoid;
+
+
+    transition:
+        transform 0.8s cubic-bezier(.2,.8,.2,1),
+        opacity 0.5s;
+
+}
+
+
+
+.photo-grid img:hover{
+
+    transform:scale(1.12);
+
+    opacity:0.75;
+
+}
+
+
+
+/* 鼠标经过 */
+
+.photo-grid img:hover{
+
+    transform:scale(1.12);
+
+    opacity:0.85;
+
+}
+
+
+
+
+
+/* MORE */
+
+.more{
+
+    display:block;
+
+    margin-top:70px;
+
+    color:#eee;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    letter-spacing:6px;
+
+    transition:0.3s;
+
+}
+
+
+
+.more:hover{
+
+    opacity:0.5;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   Responsive
+===================== */
+
+
+@media(max-width:1200px){
+
+
+    .photo-grid{
+
+        columns:3;
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+    .photography{
+
+        padding:80px 20px;
+
+    }
+
+
+
+    .photography h2{
+
+        font-size:36px;
+
+    }
+
+
+
+    .photo-grid{
+
+        columns:2;
+
+        column-gap:15px;
+
+    }
+
+
+
+    .photo-grid img{
+
+        margin-bottom:15px;
+
+    }
+
+
+}
+.photo-wrapper{
+
+    position:relative;
+
+    max-height:900px;
+
+    overflow:hidden;
+
+}
+
+
+
+.photo-mask{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:250px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    padding-bottom:50px;
+
+
+    background:
+
+    linear-gradient(
+        transparent,
+        #111
+    );
+
+}
+.more{
+
+    color:#eee;
+
+    font-size:14px;
+
+    letter-spacing:8px;
+
+    text-decoration:none;
+
+    border-bottom:1px solid #eee;
+
+    padding-bottom:8px;
+
+}
